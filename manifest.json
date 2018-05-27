@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "YouTube to niconico",
+    "version": "1",
+
+    "permissions": [
+        "activeTab"
+    ],
+
+    "content_scripts": [{
+        "matches": ["https://www.youtube.com/*"],
+        "js": ["script.js"],
+        "run_at": "document_start"
+    }]
+}
